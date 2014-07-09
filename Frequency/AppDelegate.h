@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FQViewController.h"
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
 

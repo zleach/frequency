@@ -11,6 +11,11 @@
 		92693CBB196CC1D800E0888D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 92693CBA196CC1D800E0888D /* AppDelegate.m */; };
 		92693CBD196CC1D900E0888D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 92693CBC196CC1D900E0888D /* Images.xcassets */; };
 		92693CC9196CC1D900E0888D /* FrequencyTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 92693CC8196CC1D900E0888D /* FrequencyTests.m */; };
+		92693CD7196CC20D00E0888D /* FQViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 92693CD6196CC20D00E0888D /* FQViewController.m */; };
+		92693CDD196CC25F00E0888D /* libOrtcClient.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92693CDC196CC25F00E0888D /* libOrtcClient.a */; };
+		92693CE2196CC35000E0888D /* SRWebSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = 92693CE1196CC35000E0888D /* SRWebSocket.m */; };
+		92693CE4196CC39C00E0888D /* libicucore.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 92693CE3196CC39C00E0888D /* libicucore.dylib */; };
+		92693CE7196CC6C000E0888D /* TGSineWaveToneGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 92693CE6196CC6C000E0888D /* TGSineWaveToneGenerator.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -33,6 +38,17 @@
 		92693CC2196CC1D900E0888D /* FrequencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FrequencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		92693CC7196CC1D900E0888D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		92693CC8196CC1D900E0888D /* FrequencyTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FrequencyTests.m; sourceTree = "<group>"; };
+		92693CD5196CC20D00E0888D /* FQViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FQViewController.h; sourceTree = "<group>"; };
+		92693CD6196CC20D00E0888D /* FQViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FQViewController.m; sourceTree = "<group>"; };
+		92693CDA196CC25F00E0888D /* OrtcClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OrtcClient.h; sourceTree = "<group>"; };
+		92693CDB196CC25F00E0888D /* RealtimePushAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RealtimePushAppDelegate.h; sourceTree = "<group>"; };
+		92693CDC196CC25F00E0888D /* libOrtcClient.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libOrtcClient.a; sourceTree = "<group>"; };
+		92693CDF196CC35000E0888D /* SocketRocket-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "SocketRocket-Prefix.pch"; sourceTree = "<group>"; };
+		92693CE0196CC35000E0888D /* SRWebSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SRWebSocket.h; sourceTree = "<group>"; };
+		92693CE1196CC35000E0888D /* SRWebSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SRWebSocket.m; sourceTree = "<group>"; };
+		92693CE3196CC39C00E0888D /* libicucore.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libicucore.dylib; path = usr/lib/libicucore.dylib; sourceTree = SDKROOT; };
+		92693CE5196CC6C000E0888D /* TGSineWaveToneGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TGSineWaveToneGenerator.h; sourceTree = "<group>"; };
+		92693CE6196CC6C000E0888D /* TGSineWaveToneGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TGSineWaveToneGenerator.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +56,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92693CE4196CC39C00E0888D /* libicucore.dylib in Frameworks */,
+				92693CDD196CC25F00E0888D /* libOrtcClient.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,7 +94,13 @@
 			children = (
 				92693CB9196CC1D800E0888D /* AppDelegate.h */,
 				92693CBA196CC1D800E0888D /* AppDelegate.m */,
+				92693CD5196CC20D00E0888D /* FQViewController.h */,
+				92693CD6196CC20D00E0888D /* FQViewController.m */,
+				92693CE5196CC6C000E0888D /* TGSineWaveToneGenerator.h */,
+				92693CE6196CC6C000E0888D /* TGSineWaveToneGenerator.m */,
 				92693CBC196CC1D900E0888D /* Images.xcassets */,
+				92693CDE196CC35000E0888D /* SocketRocket */,
+				92693CD8196CC25F00E0888D /* ApiiOS */,
 				92693CB5196CC1D800E0888D /* Supporting Files */,
 			);
 			path = Frequency;
@@ -85,6 +109,7 @@
 		92693CB5196CC1D800E0888D /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				92693CE3196CC39C00E0888D /* libicucore.dylib */,
 				92693CB6196CC1D800E0888D /* Info.plist */,
 				92693CB7196CC1D800E0888D /* main.m */,
 			);
@@ -106,6 +131,35 @@
 				92693CC7196CC1D900E0888D /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		92693CD8196CC25F00E0888D /* ApiiOS */ = {
+			isa = PBXGroup;
+			children = (
+				92693CD9196CC25F00E0888D /* include */,
+				92693CDC196CC25F00E0888D /* libOrtcClient.a */,
+			);
+			path = ApiiOS;
+			sourceTree = "<group>";
+		};
+		92693CD9196CC25F00E0888D /* include */ = {
+			isa = PBXGroup;
+			children = (
+				92693CDA196CC25F00E0888D /* OrtcClient.h */,
+				92693CDB196CC25F00E0888D /* RealtimePushAppDelegate.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		92693CDE196CC35000E0888D /* SocketRocket */ = {
+			isa = PBXGroup;
+			children = (
+				92693CDF196CC35000E0888D /* SocketRocket-Prefix.pch */,
+				92693CE0196CC35000E0888D /* SRWebSocket.h */,
+				92693CE1196CC35000E0888D /* SRWebSocket.m */,
+			);
+			name = SocketRocket;
+			path = ApiiOS/include/SocketRocket;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -152,6 +206,7 @@
 		92693CAA196CC1D800E0888D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = FQ;
 				LastUpgradeCheck = 0600;
 				ORGANIZATIONNAME = Zach;
 				TargetAttributes = {
@@ -205,8 +260,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				92693CE2196CC35000E0888D /* SRWebSocket.m in Sources */,
+				92693CE7196CC6C000E0888D /* TGSineWaveToneGenerator.m in Sources */,
 				92693CBB196CC1D800E0888D /* AppDelegate.m in Sources */,
 				92693CB8196CC1D800E0888D /* main.m in Sources */,
+				92693CD7196CC20D00E0888D /* FQViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -311,7 +369,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Frequency/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frequency/ApiiOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -322,7 +385,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = Frequency/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frequency/ApiiOS",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
